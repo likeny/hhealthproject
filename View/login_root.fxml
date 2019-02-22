@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0"
+	style="-fx-background-color: #5bd6e4;"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="Controller.LoginController">
+	<children>
+		<Label layoutX="51.0" layoutY="38.0" text="H" textFill="WHITE">
+			<font>
+				<Font name="Brush Script MT Italic" size="80.0" />
+			</font>
+		</Label>
+		<Label layoutX="125.0" layoutY="38.0" text="H" textFill="WHITE">
+			<font>
+				<Font name="Brush Script MT Italic" size="80.0" />
+			</font>
+		</Label>
+		<Label layoutX="102.0" layoutY="38.0" text="." textFill="WHITE">
+			<font>
+				<Font name="Brush Script MT Italic" size="80.0" />
+			</font>
+		</Label>
+		<Label fx:id="loginLabelHealth" layoutX="170.0" layoutY="68.0" text="ealth"
+			textFill="WHITE">
+			<font>
+				<Font name="Brush Script MT Italic" size="49.0" />
+			</font>
+		</Label>
+		<Label layoutX="46.0" layoutY="301.0" text="아이디"
+			textFill="WHITE">
+			<font>
+				<Font name="Haan YHead L" size="15.0" />
+			</font>
+		</Label>
+		<Label layoutX="46.0" layoutY="351.0" text="비밀번호"
+			textFill="WHITE">
+			<font>
+				<Font name="Haan YHead L" size="15.0" />
+			</font>
+		</Label>
+		<TextField fx:id="loginTextFiledID" layoutX="114.0"
+			layoutY="296.0" prefHeight="29.0" prefWidth="143.0" />
+		<PasswordField fx:id="loginPassWord" layoutX="114.0"
+			layoutY="346.0" prefHeight="29.0" prefWidth="143.0" />
+		<Button fx:id="loginBtnLogin" layoutX="81.0" layoutY="393.0"
+			mnemonicParsing="false" style="-fx-background-color: #FFD9FA;"
+			text="로그인" textFill="#6d8fff">
+			<font>
+				<Font name="HYtbrB" size="15.0" />
+			</font>
+		</Button>
+		<Button fx:id="loginBtnFirst" layoutX="84.0" layoutY="440.0"
+			mnemonicParsing="false" prefHeight="15.0" prefWidth="137.0"
+			style="-fx-background-color: #FFD9FA;" text="처음이에요!"
+			textFill="#6d8fff">
+			<font>
+				<Font name="Haan YHead L" size="22.0" />
+			</font>
+		</Button>
+		<Button fx:id="loginBtnExit" layoutX="161.0" layoutY="393.0"
+			mnemonicParsing="false" style="-fx-background-color: #FFD9FA;"
+			text="나가기" textFill="#6d8fff">
+			<font>
+				<Font name="HYtbrB" size="15.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

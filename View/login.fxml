@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0"
+	style="-fx-background-color: white;"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+	fx:controller="Controller.RootController">
+	<children>
+		<ImageView fitHeight="307.0" fitWidth="346.0" layoutY="56.0"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/login.jpg" />
+			</image>
+		</ImageView>
+		<ImageView fx:id="liImageView" fitHeight="17.0"
+			fitWidth="17.0" layoutX="281.0" layoutY="480.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@../images/login.jpg" />
+			</image>
+		</ImageView>
+		<Label layoutX="52.0" layoutY="-17.0" text="H"
+			textFill="#5bd6e4">
+			<font>
+				<Font name="Brush Script MT Italic" size="80.0" />
+			</font>
+		</Label>
+		<Label layoutX="125.0" layoutY="-17.0" text="H"
+			textFill="#5bd6e4">
+			<font>
+				<Font name="Brush Script MT Italic" size="80.0" />
+			</font>
+		</Label>
+		<Label layoutX="170.0" layoutY="14.0" text="ealth"
+			textFill="#5bd6e4">
+			<font>
+				<Font name="Brush Script MT Italic" size="49.0" />
+			</font>
+		</Label>
+		<Label layoutX="102.0" layoutY="-17.0" text="."
+			textFill="#5bd6e4">
+			<font>
+				<Font name="Brush Script MT Italic" size="80.0" />
+			</font>
+		</Label>
+		<Button StyleClass="liButton" fx:id="liBtnStart" layoutX="58.0"
+			layoutY="372.0" mnemonicParsing="false"
+			style="-fx-background-color: white;" text="Start !"
+			textAlignment="CENTER" textFill="#5bd6e4">
+			<font>
+				<Font name="Brush Script MT Italic" size="49.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

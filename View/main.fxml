@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="Controller.MainController">
+	<children>
+		<TabPane prefHeight="700.0" prefWidth="600.0"
+			tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="오늘의 기록">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<Label layoutX="26.0" layoutY="65.0" text="식사기록"
+									textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="25.0" />
+									</font>
+								</Label>
+								<Label layoutX="26.0" layoutY="328.0" text="운동기록"
+									textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="25.0" />
+									</font>
+								</Label>
+								<Label layoutX="398.0" layoutY="16.0" text="유지 칼로리 :">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Label layoutX="398.0" layoutY="40.0" text="섭취 칼로리 :">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Label fx:id="t1LabelLimit" layoutX="493.0" layoutY="14.0"
+									prefWidth="60.0" textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Label fx:id="t1LabelEat" layoutX="493.0" layoutY="40.0"
+									prefWidth="60.0" textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="t1txtBrk1" layoutX="26.0"
+									layoutY="96.0" prefHeight="29.0" prefWidth="156.0" />
+								<Button fx:id="t1BtnBrk1" layoutX="182.0" layoutY="96.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<TextField fx:id="t1txtBrk2" layoutX="26.0"
+									layoutY="128.0" prefHeight="29.0" prefWidth="156.0" />
+								<TextField fx:id="t1txtBrk3" layoutX="26.0"
+									layoutY="160.0" prefHeight="29.0" prefWidth="156.0" />
+								<Button fx:id="t1BtnBrk3" layoutX="182.0" layoutY="160.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<Button fx:id="t1BtnBrk2" layoutX="182.0" layoutY="128.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<Button fx:id="t1BtnLun2" layoutX="182.0" layoutY="224.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<Button fx:id="t1BtnLun3" layoutX="182.0" layoutY="256.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<TextField fx:id="t1txtLun3" layoutX="26.0"
+									layoutY="256.0" prefHeight="29.0" prefWidth="156.0" />
+								<TextField fx:id="t1txtLun2" layoutX="26.0"
+									layoutY="224.0" prefHeight="29.0" prefWidth="156.0" />
+								<Button fx:id="t1BtnLun1" layoutX="182.0" layoutY="192.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<TextField fx:id="t1txtLun1" layoutX="26.0"
+									layoutY="192.0" prefHeight="29.0" prefWidth="156.0" />
+								<TextField fx:id="t1txtDin1" layoutX="26.0"
+									layoutY="362.0" prefHeight="29.0" prefWidth="156.0" />
+								<Button fx:id="t1BtnDin1" layoutX="182.0" layoutY="362.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<TextField fx:id="t1txtDin2" layoutX="26.0"
+									layoutY="394.0" prefHeight="29.0" prefWidth="156.0" />
+								<TextField fx:id="t1txtDin3" layoutX="26.0"
+									layoutY="426.0" prefHeight="29.0" prefWidth="156.0" />
+								<Button fx:id="t1BtnDin3" layoutX="182.0" layoutY="426.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<Button fx:id="t1BtnDin2" layoutX="182.0" layoutY="394.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<Button fx:id="t1BtnEtc2" layoutX="182.0" layoutY="491.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<Button fx:id="t1BtnEtc3" layoutX="182.0" layoutY="523.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<TextField fx:id="t1txtEtc3" layoutX="26.0"
+									layoutY="523.0" prefHeight="29.0" prefWidth="156.0" />
+								<TextField fx:id="t1txtEtc2" layoutX="26.0"
+									layoutY="491.0" prefHeight="29.0" prefWidth="156.0" />
+								<Button fx:id="t1BtnEtc1" layoutX="182.0" layoutY="459.0"
+									mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #B7F0B1;"
+									text="+" />
+								<TextField fx:id="t1txtEtc1" layoutX="26.0"
+									layoutY="459.0" prefHeight="29.0" prefWidth="156.0" />
+								<Button fx:id="t1BtnBrkMinus1" layoutX="215.0"
+									layoutY="96.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnBrkMinus2" layoutX="215.0"
+									layoutY="128.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnBrkMinus3" layoutX="215.0"
+									layoutY="160.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnLunMinus3" layoutX="215.0"
+									layoutY="256.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnLunMinus2" layoutX="215.0"
+									layoutY="224.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnLunMinus1" layoutX="215.0"
+									layoutY="192.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnDinMinus1" layoutX="215.0"
+									layoutY="362.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnDinMinus2" layoutX="215.0"
+									layoutY="394.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnDinMinus3" layoutX="215.0"
+									layoutY="426.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnEtcMinus3" layoutX="215.0"
+									layoutY="523.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnEtcMinus2" layoutX="215.0"
+									layoutY="491.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<Button fx:id="t1BtnEtcMinus1" layoutX="215.0"
+									layoutY="459.0" mnemonicParsing="false"
+									style="-fx-background-radius: 50; -fx-background-color: #FFA7A7;"
+									text="-" />
+								<DatePicker fx:id="t1DatePicker" layoutX="71.0"
+									layoutY="18.0" prefHeight="29.0" prefWidth="169.0"
+									style="-fx-background-color: B7F0B1;" />
+								<Label layoutX="20.0" layoutY="23.0" text="Today"
+									textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="18.0" />
+									</font>
+								</Label>
+								<Label fx:id="t1LabelFire" layoutX="493.0" layoutY="65.0"
+									prefWidth="60.0" textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Label layoutX="398.0" layoutY="65.0" text="소모 칼로리 :">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Label layoutX="398.0" layoutY="95.0" text="남은 칼로리 :"
+									textFill="#ff8c8c">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Label fx:id="t1LabelCan" layoutX="493.0" layoutY="95.0"
+									prefWidth="60.0" textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Button fx:id="t1BtnTodaySave" layoutX="209.0"
+									layoutY="600.0" mnemonicParsing="false"
+									style="-fx-background-color: B7F0B1;" text="오늘의 기록 저장"
+									textFill="WHITE">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Button>
+								<Button fx:id="t1BtnTodayCal" layoutX="396.0"
+									layoutY="119.0" mnemonicParsing="false"
+									style="-fx-background-color: #FFA7A7;" text="오늘의 칼로리 계산"
+									textFill="WHITE">
+									<font>
+										<Font name="HYkanB" size="18.0" />
+									</font>
+								</Button>
+								<Button fx:id="t1BtnFoodRecord" layoutX="26.0"
+									layoutY="291.0" mnemonicParsing="false" text="지금까지 식사기록 보기">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Button>
+								<Button fx:id="t1BtnExerRecord" layoutX="26.0"
+									layoutY="558.0" mnemonicParsing="false" text="지금까지 운동기록 보기">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Button>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="t3Tab" text="칼로리 리포트">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<BarChart fx:id="t3BarChart" layoutX="1.0"
+									layoutY="119.0" prefHeight="328.0" prefWidth="600.0">
+									<xAxis>
+										<CategoryAxis side="BOTTOM" />
+									</xAxis>
+									<yAxis>
+										<NumberAxis side="LEFT" />
+									</yAxis>
+								</BarChart>
+								<Label layoutX="423.0" layoutY="96.0" text="유지 칼로리 :">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Label fx:id="t3LabelLimit" layoutX="519.0" layoutY="96.0"
+									prefHeight="16.0" prefWidth="72.0" textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Rectangle arcHeight="5.0" arcWidth="5.0"
+									fill="#b7f0b1" height="189.0" layoutX="64.0" layoutY="458.0"
+									stroke="#ff9494" strokeType="INSIDE" width="473.0" />
+								<Label layoutX="84.0" layoutY="475.0"
+									text="1주일간 남긴 총 칼로리 :" textFill="#fb8080">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Label>
+								<Label layoutX="84.0" layoutY="515.0"
+									text="일일 평균 남긴 칼로리 :" textFill="#fb8080">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Label>
+								<Label layoutX="96.0" layoutY="556.0"
+									text="체중이 감소 할수록, 활동량이 적어질수록">
+									<font>
+										<Font name="HYkanB" size="22.0" />
+									</font>
+								</Label>
+								<Label layoutX="102.0" layoutY="585.0"
+									text="유지칼로리는 감소하니 이점 유의하시고">
+									<font>
+										<Font name="HYkanB" size="22.0" />
+									</font>
+								</Label>
+								<Label fx:id="t3LabelComment" layoutX="126.0"
+									layoutY="615.0" text="꾸준히 유지하도록 노력해보세요^^">
+									<font>
+										<Font name="HYkanB" size="22.0" />
+									</font>
+								</Label>
+								<Label layoutX="379.0" layoutY="475.0" text="Kcal"
+									textFill="#fb8080">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Label>
+								<Label layoutX="379.0" layoutY="515.0" text="Kcal"
+									textFill="#fb8080">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Label>
+								<Label fx:id="t3LabelTotalCal" layoutX="308.0"
+									layoutY="475.0" prefHeight="20.0" prefWidth="69.0"
+									textFill="#fb8080">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Label>
+								<Label fx:id="t3LabelAvgCal" layoutX="306.0"
+									layoutY="515.0" prefHeight="20.0" prefWidth="69.0"
+									textFill="#fb8080">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Label>
+								<Label alignment="CENTER" contentDisplay="CENTER"
+									layoutX="177.0" layoutY="20.0" prefHeight="57.0"
+									prefWidth="239.0" style="-fx-background-color: #CEFBC9;"
+									text="최근 일주일">
+									<font>
+										<Font name="HYkanB" size="30.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="t4Tab" text="체중변화">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<Label fx:id="t4LabelWantWeight" layoutX="494.0"
+									layoutY="179.0" prefHeight="20.0" prefWidth="70.0"
+									textFill="#45bf5b">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Label>
+								<Label layoutX="346.0" layoutY="179.0" text="현재 목표 체중 :">
+									<font>
+										<Font name="HYkanB" size="20.0" />
+									</font>
+								</Label>
+								<LineChart fx:id="t4LineChart" layoutX="-1.0"
+									layoutY="215.0" prefHeight="400.0" prefWidth="600.0">
+									<xAxis>
+										<CategoryAxis side="BOTTOM" />
+									</xAxis>
+									<yAxis>
+										<NumberAxis side="LEFT" />
+									</yAxis>
+								</LineChart>
+								<Label layoutX="167.0" layoutY="109.0" text="목표 체중 변경하기"
+									textFill="#62d5ff">
+									<font>
+										<Font name="HYkanB" size="30.0" />
+									</font>
+								</Label>
+								<TextField fx:id="t4txtTodayWeight" layoutX="439.0"
+									layoutY="110.0" prefHeight="29.0" prefWidth="66.0" />
+								<Label layoutX="509.0" layoutY="116.0" prefHeight="16.0"
+									prefWidth="23.0" text="kg">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Label layoutX="566.0" layoutY="181.0" prefHeight="16.0"
+									prefWidth="23.0" text="kg">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Label>
+								<Button fx:id="t4BtnWeightSave" layoutX="532.0"
+									layoutY="111.0" mnemonicParsing="false" text="저장">
+									<font>
+										<Font name="HYkanB" size="15.0" />
+									</font>
+								</Button>
+								<Label alignment="CENTER" contentDisplay="CENTER"
+									layoutX="181.0" layoutY="21.0" prefHeight="57.0"
+									prefWidth="239.0" style="-fx-background-color: #62d5ff;"
+									text="최근 일주일">
+									<font>
+										<Font name="HYkanB" size="30.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="237.0" prefWidth="400.0"
+	style="-fx-background-color: B2EBF4;"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+	<children>
+		<Label layoutX="65.0" layoutY="40.0" text="오늘의 체중은?">
+			<font>
+				<Font name="HYkanB" size="40.0" />
+			</font>
+		</Label>
+		<TextField id="beforeTxt" layoutX="106.0" layoutY="95.0"
+			prefHeight="50.0" prefWidth="172.0">
+			<font>
+				<Font size="40.0" />
+			</font>
+		</TextField>
+		<Label layoutX="289.0" layoutY="111.0" text="kg">
+			<font>
+				<Font name="HYkanB" size="40.0" />
+			</font>
+		</Label>
+		<Button id="beforeBtnYes" layoutX="106.0" layoutY="188.0"
+			mnemonicParsing="false" text="확인">
+			<font>
+				<Font name="HYkanB" size="22.0" />
+			</font>
+		</Button>
+		<Button id="beforeBtnNo" layoutX="204.0" layoutY="188.0"
+			mnemonicParsing="false" text="취소">
+			<font>
+				<Font name="HYkanB" size="22.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

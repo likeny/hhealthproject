@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="486.0" prefWidth="1000.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<TableView id="foodTableView" layoutX="9.0" layoutY="60.0"
+			prefHeight="408.0" prefWidth="701.0">
+			<columns>
+				<TableColumn prefWidth="94.0" text="항목" />
+				<TableColumn prefWidth="98.0" text="종류" />
+				<TableColumn minWidth="5.0" prefWidth="10.0" text="순번"
+					visible="false" />
+				<TableColumn prefWidth="59.0" text="번호" />
+				<TableColumn prefWidth="170.0" text="이름" />
+				<TableColumn prefWidth="114.0" text="칼로리(100g당)" />
+				<TableColumn prefWidth="56.0" text="용량(g)" />
+				<TableColumn prefWidth="100.0" text="총 칼로리" />
+			</columns>
+		</TableView>
+		<Label layoutX="9.0" layoutY="30.0" text="섭취한 음식 선택">
+			<font>
+				<Font name="HYkanB" size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="729.0" layoutY="30.0" text="총 칼로리 계산 / 음식 직접입력">
+			<font>
+				<Font name="HYkanB" size="18.0" />
+			</font>
+		</Label>
+		<TextField id="foodTxtSearch" layoutX="458.0" layoutY="26.0" />
+		<Button id="foodBtnSearch" layoutX="630.0" layoutY="26.0"
+			mnemonicParsing="false" text="음식검색">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Label layoutX="721.0" layoutY="80.0" text="항목">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="123.0" text="종류">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="170.0" text="순번">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="859.0" layoutY="170.0" text="번호">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="210.0" text="이름">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="719.0" layoutY="250.0" text="칼로리(100g 당)">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="290.0" text="용량">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="370.0" text="총 칼로리">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Button id="foodBtnCalTotalCal" layoutX="722.0" layoutY="324.0"
+			mnemonicParsing="false" prefHeight="26.0" prefWidth="268.0"
+			text="총 칼로리 계산하기">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Button id="foodBtnSave" layoutX="754.0" layoutY="432.0"
+			mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" text="저장">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Button>
+		<Button id="foodBtnDel" layoutX="824.0" layoutY="432.0"
+			mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" text="삭제">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Button>
+		<Button id="foodBtnExit" layoutX="894.0" layoutY="432.0"
+			mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" text="닫기">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Button>
+		<Label layoutX="945.0" layoutY="250.0" text="kcal">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="862.0" layoutY="290.0" text="g">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="828.0" layoutY="397.0" text="kcal">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<ComboBox id="foodCmbKind" layoutX="753.0" layoutY="74.0"
+			prefHeight="29.0" prefWidth="231.0" />
+		<ComboBox id="foodCmbKategorie" layoutX="755.0"
+			layoutY="117.0" prefHeight="29.0" prefWidth="231.0" />
+		<TextField id="foodTxtNo" layoutX="753.0" layoutY="164.0"
+			prefHeight="29.0" prefWidth="62.0" />
+		<TextField id="foodTxtPkNo" layoutX="893.0" layoutY="164.0"
+			prefHeight="29.0" prefWidth="92.0" />
+		<TextField id="foodTxtName" layoutX="753.0" layoutY="204.0"
+			prefHeight="29.0" prefWidth="231.0" />
+		<TextField id="foodTxtCal" layoutX="836.0" layoutY="244.0"
+			prefHeight="29.0" prefWidth="102.0" />
+		<TextField id="foodTxtVolume" layoutX="754.0"
+			layoutY="284.0" prefHeight="29.0" prefWidth="102.0"
+			promptText="섭취량 입력" />
+		<TextField id="foodTxtTotalCal" layoutX="719.0"
+			layoutY="391.0" prefHeight="29.0" prefWidth="102.0" />
+		<Button id="foodBtnSelect" layoutX="729.0" layoutY="26.0"
+			mnemonicParsing="false" text="칼로리 계산 안내">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Button id="foodBtnInput" layoutX="869.0" layoutY="26.0"
+			mnemonicParsing="false" text="음식 직접 입력">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Button id="foodBtnCorInput" layoutX="903.0" layoutY="286.0"
+			mnemonicParsing="false" text="음식 저장">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Button id="foodBtnRefresh" layoutX="160.0" layoutY="26.0"
+			mnemonicParsing="false" text="새로고침">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<TableView id="exerTableView" layoutX="9.0" layoutY="60.0"
+			prefHeight="633.0" prefWidth="701.0">
+			<columns>
+				<TableColumn prefWidth="94.0" text="항목" />
+				<TableColumn prefWidth="53.0" text="순번" visible="false" />
+				<TableColumn minWidth="5.0" prefWidth="66.0" text="번호" />
+				<TableColumn prefWidth="217.0" text="이름" />
+				<TableColumn prefWidth="172.0" text="소모칼로리(90kg/10분)" />
+				<TableColumn prefWidth="67.0" text="실시시간" />
+				<TableColumn prefWidth="75.0" text="총 칼로리" />
+				<TableColumn prefWidth="75.0" text="이미지" visible="false" />
+			</columns>
+		</TableView>
+		<Label layoutX="9.0" layoutY="30.0" text="실시한 운동 선택">
+			<font>
+				<Font name="HYkanB" size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="729.0" layoutY="30.0" text="총 칼로리 계산 / 음식 직접입력">
+			<font>
+				<Font name="HYkanB" size="18.0" />
+			</font>
+		</Label>
+		<TextField id="exerTxtSearch" layoutX="458.0" layoutY="26.0" />
+		<Button id="exerBtnSearch" layoutX="630.0" layoutY="26.0"
+			mnemonicParsing="false" text="운동검색">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Label layoutX="721.0" layoutY="80.0" text="항목">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="120.0" text="순번">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="859.0" layoutY="120.0" text="번호">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="160.0" text="이름">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="719.0" layoutY="200.0" text="소모칼로리">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="250.0" text="실시시간">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="330.0" text="총 칼로리">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Button id="exerBtnCalCal" layoutX="722.0" layoutY="293.0"
+			mnemonicParsing="false" prefHeight="26.0" prefWidth="268.0"
+			text="총 칼로리 계산하기">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Button id="exerBtnSave" layoutX="754.0" layoutY="396.0"
+			mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" text="저장">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Button>
+		<Button id="exerBtnDel" layoutX="824.0" layoutY="396.0"
+			mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" text="삭제">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Button>
+		<Button id="exerBtnExit" layoutX="894.0" layoutY="396.0"
+			mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" text="닫기">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Button>
+		<Label layoutX="919.0" layoutY="209.0" text="kcal">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="895.0" layoutY="250.0" text="분">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="828.0" layoutY="357.0" text="kcal">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<ComboBox id="exerCmbKind" layoutX="753.0" layoutY="74.0"
+			prefHeight="29.0" prefWidth="231.0" />
+		<TextField id="exerTxtNo" layoutX="753.0" layoutY="114.0"
+			prefHeight="29.0" prefWidth="62.0" />
+		<TextField id="exerTxtPkNo" layoutX="893.0" layoutY="114.0"
+			prefHeight="29.0" prefWidth="92.0" />
+		<TextField id="exerTxtName" layoutX="753.0" layoutY="154.0"
+			prefHeight="29.0" prefWidth="231.0" />
+		<TextField id="exerTxtFireCal" layoutX="810.0"
+			layoutY="203.0" prefHeight="29.0" prefWidth="102.0" />
+		<TextField id="exerTxtTime" layoutX="791.0" layoutY="244.0"
+			prefHeight="29.0" prefWidth="102.0" promptText="분단위 입력" />
+		<TextField id="exerTxtTotalCal" layoutX="719.0"
+			layoutY="351.0" prefHeight="29.0" prefWidth="102.0" />
+		<Button id="exerBtnCalinfo" layoutX="729.0" layoutY="26.0"
+			mnemonicParsing="false" text="칼로리 계산 안내">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Button id="exerBtnInput" layoutX="869.0" layoutY="26.0"
+			mnemonicParsing="false" text="운동 직접 입력">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Button id="exerBtnExerSave" layoutX="916.0" layoutY="244.0"
+			mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0"
+			text="운동저장">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Button id="exerBtnRefresh" layoutX="160.0" layoutY="26.0"
+			mnemonicParsing="false" text="새로고침">
+			<font>
+				<Font name="HYkanB" size="15.0" />
+			</font>
+		</Button>
+		<Label layoutX="719.0" layoutY="220.0" text="(90kg/10분)">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="721.0" layoutY="450.0" text="미리보기">
+			<font>
+				<Font name="HYkanB" size="16.0" />
+			</font>
+		</Label>
+		<ImageView id="exerImageView" fitHeight="214.0"
+			fitWidth="268.0" layoutX="721.0" layoutY="474.0" pickOnBounds="true">
+			<image>
+				<Image url="@../images/imageprepare.jpg" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>
